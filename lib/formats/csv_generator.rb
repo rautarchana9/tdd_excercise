@@ -1,9 +1,9 @@
-require_relative 'abstract_base_class'
+require_relative 'file_generator'
 
 class FileTypes::CsvGenerator < FileTypes::FileGenerator
   
   def self.file_type
-  	"csv"
+    "csv"
   end
 
   def self.export_user_details(details)
@@ -13,6 +13,6 @@ class FileTypes::CsvGenerator < FileTypes::FileGenerator
     end
     path = File.expand_path(file)
     file.close
-    return path
+    path
   end
 end

@@ -7,13 +7,12 @@ RSpec.describe "FormatLister"do
   describe "#get_formats"do
     #context "When no formats available" do
      #it "returns empty list"do
-
-     #   expect(format_lister.get_formats).to eq([])
+     #expect(format_lister.get_formats).to eq([])
      #end
     #end  
     context "When formats available" do
        it "loads all file format generators from modules directory" do
-       	  expect(format_lister.get_formats).to eq(["csv", "pdf"])    	
+          expect(format_lister.get_formats).to eq(["csv", "pdf"])     
        end
     end
   end
